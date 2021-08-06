@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+<style>
+    body {
+        background-image: radial-gradient( #dad5d5, #1c1b1b);
+        background-repeat: no-repeat;
+        scroll-behavior: smooth;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    #nav-bar {
+        position: fixed;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        top: 0;
+        background-color: #1c1b1b;
+        font-weight: 500;
+    }
+
+        #nav-bar a {
+            font-size: 20px;
+            padding: 15px 15px;
+            color: #d8d4d1;
+            text-decoration: none;
+        }
+
+            #nav-bar a:hover {
+                opacity: 30%;
+            }
+
+    .section {
+        display: flex;
+        flex-flow: row;
+        width: 100%;
+        justify-content: space-around;
+        justify-items: center;
+        margin-top: 50px;
+    }
+
+    .box {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        justify-items: center;
+        justify-content: space-evenly;
+    }
+
+    #header-img {
+        width: 15px;
+    }
+
+    .box .container {
+        display: flex;
+        flex-direction: row;
+        margin-top: auto;
+        margin-bottom: auto;
+        justify-items: center;
+        justify-content: center;
+    }
+
+    #home {
+        margin-top: 53px;
+    }
+
+    .img {
+        flex: 0 0 50%;
+        justify-content: center;
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        flex: 0 0 50%;
+    }
+
+    @media (max-width: 800px) {
+        .box .container {
+            flex-direction: column;
+        }
+    }
+
+    #videos {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 400px;
+        justify-content: space-evenly;
+        align-items: center;
+        align-content: center;
+        margin-top: 50px;
+    }
+
+    iframe {
+        width: 45%;
+        height: 100%;
+    }
+
+    .sub-container {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 20%;
+    }
+
+    #colors {
+        background: radial-gradient( #808080 0%, #9e5c5c 25%, #440505 100%);
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        box-shadow: rgba(0,0,0,0.4) 3px 5px;
+        align-items: center;
+        text-align: center;
+    }
+
+    p {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 45px;
+        font-weight: bold;
+    }
+
+    #contact {
+        display: flex;
+        border: 2px solid #999999;
+        border-radius: 10px 10px 10px 10px;
+        background-color: rgba(68, 5, 5,0.5);
+        color: #fff;
+        width: 600px;
+        margin-left: auto;
+        margin-right:auto;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        width: fit-content;
+    }
+    
+</style>
+
+<body>
+    <header id="header">
+        <nav id="nav-bar">
+            <a class="nav-link" href="#home">
+                <img id="header-img" src="https://www.transparentpng.com/thumb/apple-iphone/IvkCd0-apple-iphone-logo-high-quality-png.png" alt="apple Iphone logo high quality png @transparentpng.com">
+                Home
+            </a>
+            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#collection">Collection</a>
+            <a class="nav-link" href="#features">Features</a>
+            <a class="nav-link" href="#contact">Contact</a>
+        </nav>
+    </header>
+    <div>
+
+
+        <section class="section" id="home">
+            <div class="box" style="margin-top: 50px; margin-left: 100px; margin-right: 100px;">
+                <h1 style="width: fit-content; margin-right: auto; margin-left: auto; text-shadow: 2px 4px 2px #615e5e; font-size:40px"><i class="fa fa-apple fa-2x">Iphone 7</i></h1>
+                <div class="container" style="align-items:center;">
+                    <img style="transform: rotate(-10deg); z-index: -5; " src="https://www.transparentpng.com/thumb/iphone-7/quality-apple-iphone-transparent-png-photos--HkPXsL.png" alt="quality apple iphone transparent png photos @transparentpng.com">
+                    <h3 style="text-align:center;  font-size: 20px;">
+                        IPhone 7 dramaticali improves the most important aspects of the iPhone experience.
+                        It itroduces advanced new camera systems. The best performanceand battery life ever in an iPhone. The brightest and most colorful iPhone display. Splash and water resistance. This is iPhone 7
+                    </h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="about">
+            <div class="box" style="width:90%">
+                <h2>Design</h2>
+                <div id="videos">
+                    <iframe id="video"
+                            src="https://www.youtube.com/embed/m3tB81dJTiY/GUID?controls=0&modestbranding=1"
+                            frameborder="0"
+                            allowfullscreen></iframe>
+                    <iframe id="video"
+                            src="https://www.youtube.com/embed/ZdJ7zga2yGg/GUID?controls=0&modestbranding=1"
+                            frameborder="0"
+                            allowfullscreen></iframe>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="section" id="collection">
+            <div class="box" style="width:90%">
+                <h2>Collection</h2>
+                <h4 style="text-align: center;">
+                    The iPhone 7 and iPhone 7 Plus come in a gorgeous design in silver, gold and rose gold finishes and introduce two all-new black finishes, a beautiful black finish that has an anodized matte appearance, and an innovative jet black finish that has a deep, high-gloss look. The new jet black finish is accomplished through an innovative nine-step process of anodization and polish for a uniform, glossy finish. An entirely reengineered enclosure results in a water resistant iPhone offering protection like never before against spills, splashes and dust.2
+                </h4>
+                <div class="container" id="collection">
+                    <div class="sub-container">
+                        <div id="colors">
+                            <p>Silver</p>
+                        </div>
+                        <div id="colors">
+                            <p>Gold</p>
+                        </div>
+                    </div>
+                    <img src="https://www.transparentpng.com/thumb/iphone-7/colorful-iphone-7-series-transparent-png-BbB7sb.png" alt="colorful iphone 7 series transparent png @transparentpng.com">
+                    <div class="sub-container">
+                        <div id="colors">
+                            <p>Rose Gold</p>
+                        </div>
+                        <div id="colors">
+                            <p style="margin-top: 40px;">Matte/Glossy Black</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="section" style="background-image: url('iphone-camera.jpg'); background-size: 88%; background-repeat: no-repeat;background-color:#000;" id="features">
+            <div style="width: 1120px; height:750px;">
+                <div class="box" style="height:100%">
+                    <div style="height: 80%">
+                        <h2 style="color:#fff; text-align:end;">The power of double-camera</h2>
+                    </div>
+                    <div class="container" style="justify-content:space-evenly;">
+
+                        <div style="display:flex;flex-flow:column;align-items:center;">
+                            <i class="fa fa-camera fa-2x" style="color:#fff; margin-top:30px"></i>
+                            <p style="color:#fff">12MP Camera</p>
+                        </div>
+                        <div style="display: flex; flex-flow: column; align-items: center;">
+                            <img src="D:\Vara21'\Landing page\opticalstab.JPG" style="width:60px" />
+                            <p style="color:#fff">Optical Image Stabilization</p>
+                        </div>
+                        <div style="display: flex; flex-flow: column; align-items: center;">
+                            <img src="D:\Vara21'\Landing page\face camera.JPG" style="width:60px;margin-top: 15px;" />
+                            <p style="color:#fff">Face HD Camera</p>
+                        </div>
+                        <div style="display: flex; flex-flow: column; align-items: center;">
+                            <i class="fa fa-certificate fa-2x" style="color:#fff; margin-top:30px"></i>
+                            <p style="color:#fff">Quad-LED True Flash</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="section" style="background-image: url('display.jpg'); background-size: 98%; background-repeat: no-repeat; background-color: #000;" id="features">
+            <div style="width: 1200px; height:730px;">
+                <div class="box" style="height:100%">
+                    <div style="height: 80%">
+                        <h2 style="color:#fff; text-align:end;">The brightest, most colorful display</h2>
+                    </div>
+                    <div class="container" style="justify-content:space-evenly;">
+                        <div style="display: flex; flex-flow: column; align-items: center;">
+                            <img src="D:\Vara21'\Landing page\colorful.JPG" style="width:60px" />
+                            <p style="color:#fff">Wide colour gamut</p>
+                        </div>
+                        <div style="display:flex;flex-flow:column;align-items:center;">
+                            <h3 style="color:#fff; font-size: 40px; margin-top:0; margin-bottom:0;">25%</h3>
+                            <p style="color:#fff">brighter</p>
+                        </div>
+
+                        <div style="display: flex; flex-flow: column; align-items: center;">
+                            <h3 style="color: #fff; font-size: 40px; margin-top: 0; margin-bottom: 0;">3D</h3>
+                            <p style="color:#fff">Touch</p>
+                        </div>
+                        <div style="display: flex; flex-flow: column; align-items: center;">
+                            <i class="fa fa-battery-full fa-2x" style="color:#fff; margin-top:30px"></i>
+                            <p style="color:#fff">Quad-LED True Flash</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="section" id="contact" >
+            <div>
+                <h1 style="text-align:center;">More about iPhone 7...</h1>
+                <hr />
+                <div>
+                    <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+                        <fieldset style="height:500px;" class="box ">
+                            <label style="margin-top: 20px;" for="first-name">First Name:</label>
+                            <input style="margin-top: 20px;" type="text" name="first-name" id="first-name" placeholder="Write your first name e.g. Emily/Martin" />
+                            <label style="margin-top: 20px;" for="last-name">Last Name:</label>
+                            <input style="margin-top: 20px;" type="text" name="last-name" id="last-name" placeholder="Write your last name e.g. Smith" />
+
+                            <label style="margin-top: 20px;" for="address">Email Address:</label>
+                            <input style="margin-top: 20px;" type="email" name="email" id="email" placeholder="Write your email address e.g. emilySmith@gmail.com" required />
+                            <textarea style="margin-top: 20px; height:100px;" placeholder="If you have a question please input it here"></textarea>
+                            <input type="submit" name="Send" id="submit" value="Submit" style="width:100px; display:block; margin-right:auto; margin-left:auto" />
+                        </fieldset>
+                        <br />
+                    </form>
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+
+</body>
+<footer>
+    <div style="margin: 80px 0px 30px 0px">
+        <hr />
+        <div class="center">
+            <i class="fa fa-facebook fa-2x" style="padding:0px"></i>   <i class="fa fa-google-plus fa-2x " style="padding: 20px;"></i>   <i class="fa fa-linkedin fa-2x " style="padding: 20px;"></i>   <i class="fa fa-twitter-square fa-2x " style="padding: 20px;"></i>   <i class="fa fa-youtube fa-2x " style="padding: 20px;"></i>
+        </div>
+        <div class="center">
+            &copy; Copyright 2021 Chivu Theodora
+        </div>
+    </div>
+</footer>
